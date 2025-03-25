@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;  /* Suave gris claro */
+    color: #333;
+    font-size: 16px;
+}
+
+header {
+    background: #1c3d5a;  /* Azul oscuro profesional */
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #f4d03f;  /* Dorado claro */
+}
+
+.profile-pic {
+    width: 140px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10%;
+    border: 4px solid #f4d03f;  /* Borde dorado */
+}
+
+/* Extra Image */
+.extra-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header .info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 12px 25px;
+    background: #f4d03f;  /* Dorado */
+    color: #1c3d5a;  /* Azul oscuro */
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: #1c3d5a;  /* Azul oscuro */
+    color: #f4d03f;  /* Dorado */
+}
+
+section {
+    margin: 20px 0;
+    padding: 30px;
+    background: #ffffff;  /* Blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #1c3d5a;  /* Azul oscuro */
+    border-bottom: 3px solid #f4d03f;  /* Dorado */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.job, .education {
+    margin-bottom: 25px;
+}
+
+.job h3, .education h3 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #1c3d5a;  /* Azul oscuro */
+    font-weight: bold;
+}
+
+.job p, .education p {
+    margin: 10px 0;
+    color: #555;  /* Gris suave */
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+footer a {
+    color: #1c3d5a;  /* Azul oscuro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #f4d03f;  /* Dorado */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 15px;
+    }
+
+    .extra-image {
+        margin-bottom: 15px;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
